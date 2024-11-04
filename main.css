@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* General page styling */
+    body {
+      font-family: Arial, sans-serif;
+      color: #3C2362;
+      line-height: 1.6;
+      background-color: #6EA546;
+    }
+
+    /* Flexbox container for the About section */
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .about-header h1 {
+      font-size: 2.5em;
+      color: #3C2362;
+    }
+
+    .about-header p {
+      font-size: 1.2em;
+      color: #3C2362;
+    }
+
+    /* Flex layout for content */
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .profile-picture {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      border: 5px solid #E8923E ;
+    }
+
+    .bio {
+      max-width: 800px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+      color: #3C2362;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #3C2362;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: 1px solid #E8923E;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .social-links a:hover {
+      background-color: #E8923E;
+      color: #BAB8AE;
+    }
+
+    /* Responsive layout for larger screens */
+    @media (min-width: 768px) {
+      .about-content {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      .bio {
+        text-align: left;
+      }
+    }
